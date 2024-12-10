@@ -15,7 +15,7 @@ header{
   display:flex;
 }
 .container-header .menu{
-  width:50%;
+  width:60%;
   display:flex; 
   justify-content: end;
 }
@@ -28,7 +28,7 @@ header{
 .container-header .menu ul li a{
   width:100%;
   display:block;
-  font-size:2vw;
+  font-size:1.8vw;
   color:#FFFFFF;
 }
 .container-header .menu .btn-header{
@@ -48,5 +48,5 @@ h2{
 }
 
 @media (max-width:1100px){
-  h2{font-size:8vw;}
+  h2{font-size:4vw;}
 }

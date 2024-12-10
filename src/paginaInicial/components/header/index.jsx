@@ -8,9 +8,9 @@ const Header = () =>{
        <h2>TIL</h2>
        <div className="menu">
         <ul>
-          <li><a href="#">Sobre a Til</a></li>
-          <li><a href="#">Vagas</a></li>
-          <li><a href="#">Serviços</a></li>
+          <li><a href="#Sobre">Sobre a Til</a></li>
+          <li><a href="#Vagas">Vagas</a></li>
+          <li><a href="#Serviços">Serviços</a></li>
         </ul>
         <button className="btn-header">
           Entrar

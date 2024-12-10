@@ -1,3 +1,5 @@
+
+import "./style.css"      
 const Mascote = () =>{
  return (
   <div className="container-mascote">

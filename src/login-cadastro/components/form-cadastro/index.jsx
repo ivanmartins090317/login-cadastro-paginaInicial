@@ -85,7 +85,7 @@ const FormCadastro = () => {
       <hr />
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
-          <label>Nome de usuário:</label>
+          <label>Nome de usuário*</label>
           <input type="text" {...register("nome")}   
           id="nome"
           />
@@ -93,7 +93,7 @@ const FormCadastro = () => {
         </div>
 
         <div>
-          <label>E-mail*:</label>
+          <label>E-mail*</label>
           <input type="email"
           id="email"
           {...register("email",
@@ -112,7 +112,7 @@ const FormCadastro = () => {
         </div>
 
         <div>
-          <label>Cargo:</label>
+          <label>Cargo*</label>
           <input type="role" {...register("cargo")}
           id="cargo"
           />
@@ -120,7 +120,7 @@ const FormCadastro = () => {
         </div>
 
         <div>
-          <label>CNPJ:</label>
+          <label>CNPJ*</label>
           <input type="text" {...register("cnpj")}
           id="cnpj"
           />
@@ -128,7 +128,7 @@ const FormCadastro = () => {
         </div>
 
         <div>
-          <label>Rua:</label>
+          <label>Rua*</label>
           <input type="text" {...register("address.street")  }
           id="street"
           />
@@ -137,7 +137,7 @@ const FormCadastro = () => {
           }
         </div>
         <div>
-          <label>Cidade:</label>
+          <label>Cidade*</label>
           <input type="text" {...register("address.city")}
           id="city"
           />
@@ -147,7 +147,7 @@ const FormCadastro = () => {
         </div>
 
         <div>
-          <label>Estado:</label>
+          <label>Estado*</label>
           <input type="text" {...register("address.state")} 
           id="estado"
           />
@@ -156,14 +156,14 @@ const FormCadastro = () => {
           )}
         </div>
         <div>
-          <label>CEP:</label>
+          <label>CEP*</label>
           <input type="numeric" {...register("address.cep")}
           id="cep"
           />
           {errors.address?.cep && <p>Opss: {errors.address.cep.message}</p>}
         </div>
         <div>
-          <label>País:</label>
+          <label>País*</label>
           <input type="text" {...register("address.country")}
           id="pais"
           />
@@ -172,7 +172,7 @@ const FormCadastro = () => {
           )}
         </div>
         <div className="senha">
-          <label>Senha:</label>
+          <label>Senha*</label>
           <input
             type={showPassword ? "text" : "password"}
             {...register("password")}
@@ -186,7 +186,7 @@ const FormCadastro = () => {
           {errors.password && <p>Opss: {errors.password.message}</p>}
         </div>
         <div className="senha confirmar">
-          <label>Confirmar senha:</label>
+          <label>Confirmar senha*</label>
           <input
             type={showPassword ? "text" : "password"}
             {...register("confirmPassword")}
