@@ -1,4 +1,4 @@
-import { Home } from "../../paginaInicial/components/home"
+import { Home } from "../../paginaInicial/home"
 import "./style.css"
 const HomePage = () =>{
  
