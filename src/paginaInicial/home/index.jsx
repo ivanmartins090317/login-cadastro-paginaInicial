@@ -15,7 +15,6 @@ const Home = () =>{
       <VagasSection/>
       <h3>Nossos serviços</h3>
       <h3>footer</h3>
-    
     </div>
   )
 }
