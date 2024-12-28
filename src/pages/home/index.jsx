@@ -1,12 +1,10 @@
-import { Home } from "../../components/home"
-import { useClerk } from "@clerk/clerk-react"
+import { Home } from "../../paginaInicial/home"
 import "./style.css"
 const HomePage = () =>{
-  const {user} = useClerk()
+ 
   return(
-   <div className="container-home">
+   <div className="container-homePage">
      <Home/>
-     <h3>Olá {user.fullName}</h3>
    </div>
   )
 }

@@ -1,7 +1,7 @@
-import { Button } from "../../components/button"
-import {Apresentacao} from "../../components/apresentacao"
-import {Header} from "../../components/header"
-import {LoginForm} from "../../components/form-login"
+import { Button } from "../../login-cadastro/components/button"
+import {Apresentacao} from "../../login-cadastro/components/apresentacao"
+import {Header} from "../../login-cadastro/components/header"
+import {LoginForm} from "../../login-cadastro/components/form-login"
 import "./style.css"
 const LoginPage = () =>{
   return (

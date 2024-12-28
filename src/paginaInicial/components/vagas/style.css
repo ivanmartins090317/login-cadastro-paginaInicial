@@ -1,0 +1,110 @@
+.container-vagas{
+  width:100%;
+  height:174vh;
+  padding-bottom:5%;
+  background-image: linear-gradient(to bottom, #040114, #0a0b34, #000f56, #000d79, #00009c);
+}
+.container-vagas form div{
+  width:61%;
+  margin:0 auto;
+}
+.container-vagas h2{
+ color:#ffffff;
+ text-align: center;
+}
+.container-vagas hr{
+  width: 95%;
+  height:.1%;
+  background: #F46720;
+  border:none;
+}
+.container-vagas form{
+  display:flex;
+  flex-direction:column;
+  background:transparent;
+}
+.container-vagas form h3{
+  font-size:50px;
+  color:#F6F6F6;
+  text-align:center;
+}
+form .container-form-vagas{
+  margin:0 auto;
+  display:flex;
+  justify-content:center;
+  gap:2%;
+}
+.search-icon-input, .location-icon-input{
+  display:flex;
+  align-items:center;
+  position: relative;
+}
+.container-form-vagas input{
+  width:497px;
+  padding-left:16%;
+}
+
+.search-icon-input .lucide-search, .lucide-map-pin{
+  width:7%;
+  position: absolute;
+  left:3%;
+  z-index:3;
+}
+.search-icon-input .lucide-search{
+  margin-left:2%;
+}
+.container-form-vagas .cidade{
+  width:226px;
+  padding-left:15%;
+}
+.container-form-vagas button{
+  background: none;
+  border: none;
+  border: 2px solid #f6f6f6;
+  padding: 3% 8%;
+  border-radius: 5px;
+  outline: none;
+  font-size: 2vw;
+  color:#f6f6f6;
+  cursor: pointer;
+}
+
+/* sesseão crad vagas  */
+.container-vagas .vagas{
+  height:100vh;
+  padding: 0 5%;
+}
+.container-vagas .vagas .container-cards-vagas{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:3%;
+}
+.card-vagas{
+  width:320px;
+  height:175px;
+  border:2px solid #f6f6f6;
+  padding:1%;
+  background:#040114;
+  color:#f6f6f6;
+  border-radius:5px;
+  margin-bottom:3%;
+}
+
+.container-vagas .vagas .empresa-nivel{
+  display:flex;
+  align-items:center;
+  justify-content:start;
+  gap:40%;
+}
+
+.container-vagas .vagas .btn-verMais{
+  text-align:center;
+}
+.container-vagas .vagas .btn-verMais button{
+  background:none;
+  border:1px solid #f6f6f6;
+  color:#f6f6f6;
+  padding:0.5% 2%;
+  cursor:pointer;
+}

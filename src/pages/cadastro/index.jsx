@@ -1,7 +1,7 @@
-import { Header } from "../../components/header"
-import { Apresentacao } from "../../components/apresentacao"
-import { Button } from "../../components/button"
-import TILForm from "../../components/form"
+import { Header } from "../../login-cadastro/components/header"
+import { Apresentacao } from "../../login-cadastro/components/apresentacao"
+import { Button } from "../../login-cadastro/components/button"
+import { FormCadastro} from "../../login-cadastro/components/form-cadastro"
 
 import "./style.css"
 
@@ -14,7 +14,7 @@ const CadastroPage = () =>{
           <Apresentacao>
             <Button name="Entrar" url="/login"></Button>
           </Apresentacao>
-          <TILForm/>
+          <FormCadastro/>
         </div>
     </div>
   )

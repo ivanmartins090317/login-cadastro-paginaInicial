@@ -1,0 +1,125 @@
+.form-container-login{
+  width:50%;
+}
+.form-container-login .container-btn-acess{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:1vw;
+  margin-bottom:5%
+}
+.form-container-login .btn-acess{
+  display:flex;
+  background:transparent;
+  align-items:center;
+  justify-content:center;
+  width:19vw;
+  border-radius:10px;
+  gap:2%;
+  cursor:pointer;
+}
+.form-container-login hr{
+  width:50%;
+  margin:0 auto;
+}
+.form-container-login h2, .form-container-login a{
+  display:block;
+  max-width:100%;
+  text-align:center;
+}
+.form-container-login form{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+form .btn-submit{
+  width: 100%;
+  text-align: center;
+}
+.btn-submit{
+  width: 100%;
+  margin:0 auto;
+}
+.btn-btn-submit {
+  width:44%;
+  background-color: #ff6b00;
+  color: #fff;
+  padding: 1% 11%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.3vw;
+  font-weight: bold;
+  margin:5% auto;
+  transition: background-color 0.3s;
+} 
+
+.btn-btn-submit:hover {
+  background-color: #e65c00;
+}
+
+
+@media (max-width:1100px){
+  .container-login{
+    width: 100%;
+    flex-direction: column;
+  }
+  .form-container-login{
+    width: 100%;
+    margin-bottom:5%;
+  }
+  .form-container-login .btn-acess{
+    width: 65%;
+    font-size:2.8vw;
+  }
+  .form-container-login hr{
+    width: 80%;
+  }
+  .btn-btn-submit{
+   font-size:2.8vw;
+   padding: 1.5% 11%;
+  }
+  a{margin:0}
+
+  /* .container p {
+    font-size:2.8vw;
+    margin:7% auto 4%;
+  }
+  .container h3{
+    font-size:4vw;
+    margin:0 0 5%;
+  }
+  .form-container h2, .form-container hr{
+    display:none;
+  }
+  form div{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form-container{
+    width: 100%;
+    justify-content: center;
+  }
+  label{
+    margin:4% 8%;
+  }
+  input{
+    margin:0 auto;
+  }
+  a{ margin: 0 8%;}
+  .form-container .btn-btn-submit{
+    font-size:2.8vw;
+  }
+  .form-container .termos {
+    width:62%;
+    margin:0 auto;
+    margin-bottom:5%;
+  }
+  .form-container hr.show-mobile{
+    display:block;
+    margin-bottom:3%;
+  } */
+}

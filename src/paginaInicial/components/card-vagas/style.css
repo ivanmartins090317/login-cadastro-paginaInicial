@@ -1,0 +1,39 @@
+.card-vagas{
+  width:27%;
+  height:0%;
+  border:2px solid #f6f6f6;
+  padding:1%;
+  background:#040114;
+  color:#f6f6f6;
+  border-radius:5px;
+  margin-bottom:3%;
+}
+.card-vagas .descricao-vaga{
+  line-height:6px;
+}
+.card-vagas .descricao-vaga h4{
+  font-weight:bold;
+}
+.card-vagas .descricao-vaga .local{
+  font-size:0.8vw;
+}
+
+.card-vagas .vagas .empresa-nivel{
+  display:flex;
+  align-items:center;
+  justify-content:start;
+  gap:40%;
+}
+
+.container-vagas .vagas .empresa-nivel .container-empresa,.container-vagas .vagas .empresa-nivel .container-nivel{
+  width:62%;
+  display:flex;
+  align-items:center;
+  gap:12%;
+}
+.container-vagas .vagas .empresa-nivel .container-nivel .lucide{
+  width:100%;
+}
+.container-vagas .vagas .empresa-nivel .container-empresa p, .container-vagas .vagas .empresa-nivel .container-nivel .nivel{
+  font-size:0.8vw;
+}
