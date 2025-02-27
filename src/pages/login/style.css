@@ -1,4 +1,11 @@
 .container-login{
   width:100%;
   display:flex;
+  
+}
+
+@media (max-width: 1100px){
+  .container-login{
+    flex-direction:column;
+  }
 }

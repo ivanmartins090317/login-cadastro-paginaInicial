@@ -23,7 +23,12 @@ const TILForm = () => {
           type="text"
           placeholder="Nome da empresa"
           id="empresa"
-          {...register('empresa', { required: 'O nome da empresa é obrigatório' })}
+          {...register('empresa', { required: 'O nome da empresa é obrigatório',
+          pattern: {
+            value: /^[A-Z-a-z\s]+$/i,
+            message: "Digite uma empresa valida"
+          }
+        })}
         />
         {errors.empresa && <p>{errors.empresa.message}</p>}
       </div>
@@ -34,19 +39,29 @@ const TILForm = () => {
           type="text"
           placeholder="Digite nome"
           id="nome"
-          {...register('nome', { required: 'O nome é obrigatório' })}
+          {...register('nome', { required: 'O nome é obrigatório',
+          pattern: {
+            value: /^[A-Z-a-z\s]+$/i,
+            message: "Digite um nome valido"
+          }
+        })}
         />
         {errors.nome && <p>{errors.nome.message}</p>}
       </div>
       {/* Cargo */}
       <div>
         <label htmlFor="cargo">Cargo*</label>
-        <input
+        <select
           type="text"
           placeholder="Digite cargo"
           id="cargo"
           {...register('cargo', { required: 'O cargo é obrigatório' })}
-        />
+        >
+          <option value="CANDIDATE">CANDIDATE</option>
+          <option value="ENTERPRISE ">ENTERPRISE</option>
+          <option value="ADMIN">ADMIN</option>
+        </select>
+     
         {errors.cargo && <p>{errors.cargo.message}</p>}
       </div>
       {/* TELEFONE */}
@@ -54,9 +69,14 @@ const TILForm = () => {
         <label htmlFor="telefone">Telefone*</label>
         <input
           type="text"
-          placeholder="Digite seu telefone"
+          placeholder="Digite seu telefone ex:+55 11 99999-9999"
           id="telefone"
-          {...register('telefone', { required: 'O telefone é obrigatório' })}
+          {...register('telefone', { required: 'O telefone é obrigatório',
+            pattern: {
+              value: /^[\d{2} \d{5}-\d{4}]$/i,
+              message: "Digite um telefone válido"
+            }
+            })}
         />
         {errors.telefone && <p>{errors.telefone.message}</p>}
       </div>
@@ -81,7 +101,13 @@ const TILForm = () => {
           type="text"
           placeholder="Digite seu CNPJ ou CPF"
           id="cnpj-cpf"
-          {...register('cnpj-cpf', { required: 'O cnpj-cpf é obrigatório' })}
+          {...register('cnpjCpf', { required: 'O cnpj-cpf é obrigatório',
+            pattern: {
+              value: /^(?:\d{3}\.\d{3}\.\d{3}-\d{2}|\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2})$/,
+              message: "Formato correto para cnpj 12.345.678/0001-90 ou cpf 123.456.789-09"
+            }
+            
+           })}
         />
         {errors.cnpjCpf && <p>{errors.cnpjCpf.message}</p>}
       </div>
@@ -92,7 +118,12 @@ const TILForm = () => {
           type="text"
           placeholder="Digite sua senha"
           id="senha"
-          {...register('senha', { required: 'O senha é obrigatório' })}
+          {...register('senha', { required: 'O senha é obrigatório',
+            pattern: {
+              value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
+              message: "A senha deve ter pelo menos 8 caracteres, incluindo letra maiúscula, letra minúscula, número e caractere especial"
+            }
+           })}
         />
         {errors.senha && <p>{errors.senha.message}</p>}
       </div>
@@ -102,7 +133,7 @@ const TILForm = () => {
           type="text"
           placeholder="Confirme sua senha"
           id="ConfirmeSenha"
-          {...register('ConfirmeSenha', { required: 'O ConfirmeSenha é obrigatório' })}
+          {...register('ConfirmeSenha', { required: 'O Confirme a senha' })}
         />
         {errors.ConfirmeSenha && <p>{errors.ConfirmeSenha.message}</p>}
       </div>

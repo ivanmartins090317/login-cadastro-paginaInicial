@@ -50,7 +50,7 @@ form div{
   min-width: 50%;
   margin-bottom:1%
 }
-input {
+input, select {
   width:80%;
   padding:1rem;
   border: 1px solid #ccc;
@@ -59,6 +59,7 @@ input {
   color: #333;
   cursor: pointer;
 }
+select{width:85%; margin:0 auto; }
 form .btn-submit{
   width: 100%;
   text-align: center;
